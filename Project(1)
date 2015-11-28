@@ -1,1 +1,36 @@
 //11/28/2015
+//Game of three's
+#include <windows.h>
+#include <iostream>
+using namespace std;
+int main() 
+{
+	//Vars
+	int Input;
+	int Output;
+	int RCheck;
+	int update;
+	//Computations
+	cout << "Enter in a number, bigger the better." << "\n";
+	cin >> Input ;
+	RCheck = Input % 3;
+	if (RCheck = 2)
+	{
+		update = Input + 1;
+		Output = update / 3;
+		cout << Output << "\n";
+		
+	}
+	else if (RCheck = 1)
+	{
+		update = Input - 1;
+		Output = update / 3;
+		cout << Output << "\n";
+	}
+	else
+	{
+		Output = Input / 3;
+		cout << Output << "\n";
+	}
+	system("pause");
+}
